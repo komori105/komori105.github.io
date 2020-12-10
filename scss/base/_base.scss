@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+html,body {
+  font-size:62.5%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+@font-face {
+
+/*任意のフォント名（フリーフォントの名称など）*/
+
+font-family: "CorporatelogoB";
+
+/*フォントファイルへのパス（複数指定は上から順に読み込まれる）*/
+
+src: url("../../freemova.woff2") format("woff2"),
+
+url("../../freemova.woff") format("woff");
+
+}
+
+$sp: 959px;  // スマホ
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.bg_glay {
+  max-width:960px;
+  margin: 0 auto;
+  box-shadow:0 0 8px gray;
+  @include sp {
+    max-width:375px;
+  }
+}
+
+@include sp {
+  .sp_none {
+    display:none;
+  }
+}

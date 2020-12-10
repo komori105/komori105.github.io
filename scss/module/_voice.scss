@@ -1,0 +1,48 @@
+.voice {
+  background: $white-color;
+  &-ttl {
+    @include _ttl;
+  }
+  &-inner {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 32px;
+    @include sp {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .box {
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 32px;
+      @include sp {
+        display:block;
+      }
+      &-attribute {
+        text-align: center;
+        h2 {
+          margin-top: 16px;
+          font-size:1.6rem;
+        }
+      }
+      &-comment {
+        width:700px;
+        background: #fff;
+        border: 3px solid #dedede;
+        padding:24px;
+        font-size: 1.6rem;
+        line-height:1.5;
+        @include sp {
+          width:auto;
+          margin-top: 16px;
+          padding:16px;
+        }
+        .bold {
+          color: $sub-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

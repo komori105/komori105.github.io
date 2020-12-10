@@ -1,0 +1,109 @@
+.main {
+  background: url(../../img/module/main/main_bg.png) center center no-repeat;
+  background-size: cover;
+  height:284px;
+  position: relative;
+  z-index:0;
+  &_pic {
+    position:absolute;
+    bottom:0;
+    right:120px;
+    z-index:-1;
+    @include sp {
+      right:0;
+    }
+  }
+  &-inner {
+    padding: 32px 16px 8px 88px;
+    @include sp {
+      padding: 32px 32px 8px 16px;
+    }
+    &-txt {
+      span {
+        font-family: "CorporatelogoB";
+        font-size:3.6rem;
+        display:block;
+        padding:4px;
+        text-align: center;
+        background: $main-color;
+        margin-top: 12px;
+        color:#fafafa;
+        @include sp {
+          font-size:2.4rem;
+        }
+        &:nth-child(1) {
+          width:185px;
+          margin-top: 0;
+          @include sp {
+            width:125px;
+          }
+        }
+        &:nth-child(2) {
+          width:180px;
+          background: #1b547b;
+          margin-left: 32px;
+          @include sp {
+            width:125px;
+            margin-left: 0;
+          }
+        }
+        &:nth-child(3) {
+          width:255px;
+          margin-left: 64px;
+          @include sp {
+            width:175px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  &-ttl {
+    margin-top: -20px;
+    font-family: "CorporatelogoB";
+    font-size:1.6rem;
+    text-align: right;
+    color:$main-color;
+    text-shadow    :
+      2px  2px 1px #ffffff,
+      -2px  2px 1px #ffffff,
+      2px -2px 1px #ffffff,
+      -2px -2px 1px #ffffff,
+      2px  0px 1px #ffffff,
+      0px  2px 1px #ffffff,
+      -2px  0px 1px #ffffff,
+      0px -2px 1px #ffffff;
+      @include sp {
+        margin-top: 32px;
+        font-size:1.4rem;
+      }
+    .txt_bg {
+      font-size:3rem;
+      @include sp {
+        font-size:2rem;
+      }
+    }
+  }
+  &-inner2 {
+    background: rgba(255,255,255,0.5);
+    height:60px;
+    &-ttl {
+      padding-left: 64px;
+      line-height:64px;
+      font-size:3.2rem;
+      font-family: "CorporatelogoB";
+      color:$main-color;
+      @include sp {
+        padding-left: 0px;
+        text-align: center;
+        font-size:2.4rem;
+      }
+      .txt_bg {
+        font-size:4rem;
+        @include sp {
+          font-size:3rem;
+        }
+      }
+    }
+  }
+}

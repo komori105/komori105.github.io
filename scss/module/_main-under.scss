@@ -1,0 +1,76 @@
+.main-under {
+  background: #fff9e6;
+  &-inner {
+    padding:24px 56px;
+    text-align: center;
+    @include sp {
+      padding:24px 32px;
+    }
+  }
+  &-ttl {
+    font-size:1.6rem;
+    margin-top: 24px;
+    @include sp {
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    text-shadow    :
+      2px  2px 1px #ffffff,
+      -2px  2px 1px #ffffff,
+      2px -2px 1px #ffffff,
+      -2px -2px 1px #ffffff,
+      2px  0px 1px #ffffff,
+      0px  2px 1px #ffffff,
+      -2px  0px 1px #ffffff,
+      0px -2px 1px #ffffff;
+  }
+  &-box {
+    display:flex;
+    justify-content: space-between;
+    @include sp {
+      justify-content: center;
+    }
+    .box {
+      &-ttl {
+        font-family: "CorporatelogoB";
+        font-size:2.4rem;
+        color:$white-color;
+        background: $main-color;
+        padding:8px 24px;
+      }
+      &-inner {
+        background: $white-color;
+        padding: 10px 12px 20px;
+        text-align: center;
+        h3 {
+          font-size:1.8rem;
+        }
+        h4 {
+          font-family: "CorporatelogoB";
+          font-size:6rem;
+          color:#e20808;
+          &::before {
+            content:"年収";
+            font-size:3.2rem;
+            color: $txt-color;
+          }
+          &::after {
+            content:"万円";
+            font-size:3.2rem;
+            color: $txt-color;
+          }
+        }
+        P {
+          font-family: "CorporatelogoB";
+          font-size:1.8rem;
+          display:inline-block;
+          margin-top: 8px;
+          padding: 0 4px;
+          background:linear-gradient(transparent 60%, $sub-color 0%);
+        }
+      }
+    }
+  }
+}
+
+@include _btn;

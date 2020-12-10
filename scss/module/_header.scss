@@ -1,0 +1,40 @@
+.header {
+  padding:0px 64px;
+  height:70px;
+  background: $main-color;
+  font-size:1.6rem;
+  color:$white-color;
+  @include sp {
+    padding: 0px 16px;
+  }
+  &-inner {
+    display:flex;
+    height:70px;
+    align-items: center;
+  }
+  &-ttl {
+    font-size:3.2rem;
+    font-family: "CorporatelogoB";
+    @include sp {
+    font-size:2.4rem;
+  }
+  }
+  &-subttl {
+    margin-left: 8px;
+    letter-spacing: .05em;
+    border-left:3px solid $white-color;
+    padding-left: 8px;
+    .txt_bg {
+      font-size:1.6rem;
+    }
+  }
+  &-nav  {
+    margin-left: auto;
+    ul {
+      display:flex;
+      li:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}
